@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <title>Construye Colabora</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="stylesheet" href="assets/css/app.min.css">
+        <!-- Llamado a dependencias JS -->
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-touch.min.js"></script>
+    </head>
+    <body>
+        <ng-view ng-controller="main as main" class="main" ng-cloak>
+            <ng-include src="main.container" class="container"></ng-include>
+        </ng-view>
+        <!-- Componentes de la app raiz -->
+        <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
